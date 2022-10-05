@@ -66,7 +66,7 @@ void search(){
 	pre=head;
 	bool flag=false;
 	for (p=head->next;p!=NULL;p=p->next){
-		if (strcmp(p->name,name)==0){
+		if (strstr(p->name,name)){
 			cout<< setw(21) << left << p->name << setw(21) << left << p->owner << setw(21) << left << p->tel << endl; 
 			flag=true;
 		}
